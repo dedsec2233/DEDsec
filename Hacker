@@ -1,0 +1,105 @@
+clear
+echo what is your name # tulisan keluar
+read nick
+sleep 0.1
+cowsay -f eyes Anonnymous Black Hacker
+sleep 0.13
+echo "«------------------------------»"
+sleep 0.12
+echo " author : Down of dedsec "
+sleep 0.2
+echo "«------------------------------»"
+sleep 0.3
+echo "(1) phishing Account/nexphisher"
+sleep 0.4
+echo "(2) Hack camera phone/saycheese"
+sleep 0.5
+echo "(3) Track Down Conartist/seeker"
+sleep 0.6
+echo "(4) looking for weaknesses of A website/Redhawk"
+sleep 0.7
+echo "(5) ngrok for seeker "
+sleep 0.8
+echo "(6) unfollow instagram "
+sleep 0.9
+echo "(7) Got Nickname and Family account/light_brigher"
+sleep 0.10
+echo "(8) call 911 "
+sleep 0.11
+echo "(9) exit "
+sleep 0.12
+echo "«------------------------------»"
+sleep 0.13
+read -p "»»»»»»»»» : " pill;
+
+#Batas gan
+if [ $pill = "1" ]
+then
+clear
+git clone git://github.com/htr-tech/nexphisher.git
+cd nexphisher
+bash tmux_setup
+bash nexphisher
+fi
+#Batas gan
+if [ $pill = "2" ]
+then
+clear
+git clone https://github.com/Anonymous3-SIT/saycheese
+cd saycheese
+bash saycheese.sh
+fi
+#Batas gan
+if [ $pill = "3" ]
+then
+clear
+git clone https://github.com/thewhiteh4t/seeker
+cd seeker
+python seeker.py -t manual
+fi
+#batas gan
+if [ $pill = "4" ]
+then
+clear
+git clone https://github.com/Tuhinshubhra/RED_HAWK
+cd RED_HAWK
+php rhawk.php
+fi
+#batas gan
+if [ $pill = "5" ]
+then
+clear
+git clone https://github.com/Ahmedmahmed8a/ngrok/
+cd ngrok
+chmod +x install.sh
+./install.sh
+./ngrok http 8080
+fi
+#Batas gan
+if [ $pill = "6" ]
+then
+git clone git://github.com/htr-tech/unfollow-plus.git
+cd unfollow-plus
+bash unfollower.sh
+fi
+#Batas gan
+if [ $pill = "7" ]
+then
+clear
+git clone https://github.com/zlucifer/light_bringer2
+cd light_bringer2
+bash light.sh
+fi
+#Batas gan
+if [ $pill = "8" ]
+then
+clear
+termux-telephony-call 911
+fi
+#Batas gan
+if [ $pill = "9" ]
+then
+echo
+echo " script done "
+echo
+fi
